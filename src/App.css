@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #2a0845; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2a0845,
+    #352850
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2a0845,
+    #352850
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Toastify__toast-body {
+  font-family: "Oswald", sans-serif;
+}
+input[type="email"],
+textarea {
+  font-family: "Oswald", sans-serif;
+  background: transparent;
+  border: solid #fff 1px;
+  min-width: 200px;
+  padding: 20px;
+  font-size: 1rem;
+  resize: none;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+}
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #c0c0c0;
+}
+input[type="submit"] {
+  font-family: "Oswald", sans-serif;
+  border: solid #fff 1px;
+  background: #fff;
+  cursor: pointer;
+  color: #000;
+  padding: 20px 40px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+.aboutMeText {
+  width: 80%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+ul {
+  margin-top: 0px;
+}
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+}
+.toolWrapper {
+  transition: 0.3s;
+}
+.toolWrapper:hover {
+  transform: scale(0.98);
+}
+.mainPage {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.toolWrapper > svg {
+  width: 80px;
+  height: 80px;
+}
+.topPartNav > svg {
+  cursor: pointer;
+}
+.pfp {
+  pointer-events: none;
+  width: 80%;
+  margin-top: 50px;
+}
+.topPartNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+}
+aside > img,
+aside > h1,
+aside > h2 {
+  display: none;
+}
+.menuItems > .active {
+  background: #fff;
+  color: #000000;
+}
+aside {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #2a0845;
+  height: 100svh;
+}
+.menuItems {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.menuClosed {
+  display: none;
+}
+.menuClosedAside {
+  height: auto;
+}
+.dateTimeline {
+  color: #fff;
+}
+.menuItems > a {
+  text-decoration: none;
+  flex: 1;
+  display: flex;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 30px 0;
+  transition: 0.3s;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.myBubbleUI {
+  width: 100%;
+  flex: 1;
+}
+.selectedToolType {
+  color: #fff;
+  text-decoration: underline;
+}
+.mainPage > div > h2 {
+  margin-top: 205px;
+}
+
+.projectFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.oneProject {
+  margin: 10px;
+  position: relative;
+}
+.oneProject > img {
+  width: 150px;
+}
+@media screen and (min-width: 270px) {
+  .mainPage > div > h2 {
+    margin-top: 140px;
+  }
+  .oneProject > img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .oneProject > img {
+    width: 350px;
+  }
+  .mainPage > div > h2 {
+    margin-top: 30px;
+  }
+  .menuClosed {
+    display: flex;
+  }
+  .menuClosedAside {
+    height: 100%;
+  }
+  .mainDiv {
+    flex-direction: row;
+  }
+  .mainPage {
+    align-items: center;
+  }
+  aside {
+    position: sticky;
+    background: transparent;
+    max-width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .menuItems > a:hover {
+    font-size: 1.65rem;
+  }
+  .topPartNav > svg {
+    display: none;
+  }
+  aside > img,
+  aside > h1,
+  aside > h2 {
+    display: block;
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a0845;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c0;
+}
